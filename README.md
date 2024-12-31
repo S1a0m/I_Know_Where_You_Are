@@ -21,22 +21,3 @@ track/
 ├── README.md                # Documentation
 ├── requirements.txt         # Python dependencies
 └── run.py                   # Entry point to start the application
-
-```
-🚀 Features
-
-    IP Logging: Captures and stores the IP address of visitors accessing the /track/ endpoint.
-    Smooth Redirection: Redirects users to a regular page, maintaining a natural user experience.
-    Lightweight and Modular: Built using Flask, making it easy to deploy and extend.
-
-🛠️ Installation
-Prerequisites
-
-    Python 3.7+
-    A virtual environment tool (recommended)
-    Flask (specified in requirements.txt)
-
-Steps
-
-1. Clone the repository:
-    git clone <repository-url>
