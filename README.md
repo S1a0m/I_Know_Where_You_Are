@@ -40,7 +40,7 @@ Steps
 
 Clone the repository:
 
-    git clone <repository-url>
+    git clone https://github.com/S1a0m/I_Know_Where_You_Are.git
 
 Navigate to the project directory:
 
