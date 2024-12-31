@@ -38,5 +38,5 @@ Prerequisites
 
 Steps
 
-    1. Clone the repository:
-      git clone <repository-url>
+1. Clone the repository:
+    git clone <repository-url>
