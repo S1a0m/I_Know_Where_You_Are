@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                // Obtenir l'IP publique
+                const response = await fetch("https://api.ipify.org?format=json");
+                const data = await response.json();
+
+                // Envoie de l'IP au backend
+                await fetch("/save-ip", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ ip: data.ip }),
+                });
+                alert(data.ip);
+
+                // Redirection après l'envoi
+                window.location.href = "/redirect";
+            } catch (error) {
+                console.error("Erreur :", error);
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Tracking en cours...</h1>
+</body>
+</html>
